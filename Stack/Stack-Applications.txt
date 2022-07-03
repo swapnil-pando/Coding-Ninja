@@ -1,0 +1,5 @@
+1 --> Function Call Stack
+2 --> Code Editor
+3 --> Undo/Redo
+4 --> Infix to Prefix/PostFix and Prefix/Postfix Evaluation because of operator precedence, associativity
+5 --> Stock Span
