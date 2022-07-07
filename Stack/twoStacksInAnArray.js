@@ -53,7 +53,7 @@ class TwoStacks {
             console.log(this.arr[i]);
         }
     }
-};
+}
 
 const twoStacks = new TwoStacks(5);
 twoStacks.pushIntoFirst(2);

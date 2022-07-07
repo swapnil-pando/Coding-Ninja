@@ -20,7 +20,7 @@ function isBalancedParenthesis(input){
             case '(':
                 stack.push(i);
                 break;
-            case '}':
+            case ')':
             case ']':
             case '}':
                 if(mapping[stack.getTop()] === i) {
@@ -33,8 +33,5 @@ function isBalancedParenthesis(input){
                 break;
         }
     }
-    if(stack.getCurrentSize() === 0)
-        return true;
-    else
-        return false;
+    return stack.getCurrentSize() === 0;
 }

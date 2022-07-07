@@ -9,14 +9,13 @@ class Stack {
     push(element) {
         if(this.getCurrentSize() === this.size) {
             console.log(`Stack is Already full, so cannot add element ${element}`);
-            return;
         }
         else {
             try {
                 this.top += 1;
                 this.arr.push(element);
             } catch(e) {
-                throw new error(e);
+                throw new Error(e);
             }
         }
     }
@@ -47,16 +46,16 @@ class Stack {
     }
 }
 
-// const stack = new Stack(5);
-// stack.push(1);
-// stack.push(2);
-// stack.push(3);
-// stack.push(4);
-// stack.push(5);
-// stack.pop();
-// stack.pop();
-// stack.pop();
-// stack.pop();
-// stack.printStack();
+const stack = new Stack(5);
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(4);
+stack.push(5);
+stack.pop();
+stack.pop();
+stack.pop();
+stack.pop();
+stack.printStack();
 
 module.exports = Stack;
