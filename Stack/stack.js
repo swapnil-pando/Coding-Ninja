@@ -1,4 +1,3 @@
-
 class Stack {
     constructor(n = Number.MAX_SAFE_INTEGER) {
         this.size = n;
@@ -44,18 +43,21 @@ class Stack {
     getTop() {
         return this.arr[this.top];
     }
+    empty(){
+        return this.getCurrentSize() === 0;
+    }
 }
 
-const stack = new Stack(5);
-stack.push(1);
-stack.push(2);
-stack.push(3);
-stack.push(4);
-stack.push(5);
-stack.pop();
-stack.pop();
-stack.pop();
-stack.pop();
-stack.printStack();
+// const stack = new Stack(5);
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// stack.push(4);
+// stack.push(5);
+// stack.pop();
+// stack.pop();
+// stack.pop();
+// stack.pop();
+// stack.printStack();
 
 module.exports = Stack;

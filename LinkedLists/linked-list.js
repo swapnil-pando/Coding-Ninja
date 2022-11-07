@@ -193,4 +193,37 @@ class LinkedList {
         currNode.next = prevNode;
         return this.reverseALinkedListRecursive(nextNode, currNode);
     }
+    removeDuplicatesFromSorted() {
+        let currNode = this.head;
+        let nextNode = this.head && this.head.next || null;
+        if(!currNode || !nextNode){
+            return this.head;
+        }
+        while(this.head.val === this.head.next.val){
+            this.head = this.head.next;
+        }
+        while(nextNode) {
+            if(currNode.val === nextNode.val){
+                nextNode = nextNode.next;
+                currNode.next = nextNode;
+            } else {
+                currNode = currNode.next;
+                nextNode = nextNode.next;
+            }
+        }
+    }
+    removeDuplicatesFromUnSorted() {}
+    
+    //Function to check whether two linked lists are identical or not.
+    areIdentical(head1, head2)
+    {
+        while(head1 && head2) {
+            if(head1.data !== head2.data){
+                return false;
+            }
+            head1 = head1.next;
+            head2 = head2.next;
+        }
+        return !(head1 || head2);
+    }
 }
