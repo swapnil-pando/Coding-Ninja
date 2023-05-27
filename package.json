@@ -1,0 +1,25 @@
+{
+  "name": "coding",
+  "version": "1.0.0",
+  "description": "A library of important Coding Questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapnil-pando/Coding-Ninja.git"
+  },
+  "keywords": [
+    "coding"
+  ],
+  "author": "Swapnil Satpathy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swapnil-pando/Coding-Ninja/issues"
+  },
+  "homepage": "https://github.com/swapnil-pando/Coding-Ninja#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
